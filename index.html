@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcaida Academia</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="application/javascript" src="logo.js" defer></script>
+</head>
+<body>
+    <header>
+        <logo id="logo">
+            <svg id="circle_logo_svg" height="100%">
+                <circle id="inside_circle_svg" style="position: fixed; fill: transparent; stroke: white; stroke-width: 0;"/>
+                <circle id="outside_circle_svg" style="position: fixed; fill: transparent; stroke: white; stroke-width: 0;"/>
+                <path id="outside_circular_path" d="m 0 0.5 c 0 -0.6667 1 -0.6667 1 0 c 0 0.6667 -1 0.6667 -1 0" style="position: fixed; fill: transparent; stroke: transparent; stroke-width: 3; transform-origin: 0.5 0.5;"></path>
+                <path id="inside_circular_path" d="m 0 0.5 c 0 0.6667 1 0.6667 1 0 c 0 -0.6667 -1 -0.6667 -1 0" style="position: fixed; fill: transparent; stroke: transparent; stroke-width: 3; transform-origin: 0.5 0.5;"></path>
+                <text id="outside_circular_text" fill="white">
+                    <textPath xlink:href="#outside_circular_path" startOffset="14.5%">SALU</textPath>
+                </text>
+                <text id="inside_circular_text" fill="white">
+                    <textPath xlink:href="#inside_circular_path" startOffset="12.5%">RAMOS</textPath>
+                </text>
+            </svg>
+            <img id="bull_logo_svg" src="bull.svg" draggable="false">
+        </logo>
+        <input id="logo_size" type="range" min="50" max="2000" value="50" class="slider" id="myRange">
+    </header>
+</body>
+</html>

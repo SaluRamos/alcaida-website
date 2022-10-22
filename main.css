@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+    font-family: "fightthis";
+}
+
+@font-face {
+    font-family: "fightthis";
+    src: url(fightthis.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ethnocentric";
+    src: url(ethnocentric.otf);
+    font-display: swap;
+}
+
+body{
+    background: linear-gradient(180deg, rgba(255,12,12,1) 0%, rgba(195,65,0,1) 100%);
+    background-repeat: no-repeat;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 90% 10%;
+    justify-content: center;
+    align-content: center;
+}
+
+header logo{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+header input{
+    justify-self: center;
+    width: 500px;
+}
+
+#bull_logo_svg{
+    grid-row: 1;
+    grid-column: 1;
+    --svg_scale: 50px;
+    height: var(--svg_scale);
+    padding: calc(var(--svg_scale) * 0.03);
+    padding-top: calc(var(--svg_scale) * 0.195);
+    padding-bottom: calc(var(--svg_scale) * 0.195);
+    user-select: none;
+}
+
+#circle_logo_svg{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#outside_circular_text textPath{
+    text-align: center;
+    display: inline-block;
+    z-index: 1;
+    font-family: "ethnocentric";
+}
+
+#inside_circular_text textPath{
+    text-align: center;
+    display: inline-block;
+    z-index: 1;
+    font-family: "ethnocentric";
+}
